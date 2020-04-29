@@ -2,7 +2,7 @@
 * @author Joel Delgado jode9188
 * Prog2 - VT2020
 * Assignment 1 -  Part 2
-* @version: 1.3
+* @version: 2.0
 */
 
 import java.text.DecimalFormat;
