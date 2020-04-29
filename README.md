@@ -11,6 +11,5 @@ Added extra functionality beyond the requirements for practice purposes:
 <li>sorting by value in ascending and descending order</li>
 <li>deleting all valuable items of a certain type</li>
 </ul>
-
-
+</br></br>
 ![Image of Valuable Register](Valuable_Register_eng.png)
