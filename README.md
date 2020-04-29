@@ -8,4 +8,5 @@ Added extra functionality beyond the requirements for practice purposes:
 <li>sorting by name in ascending and descending order</li>
 <li>sorting by value in ascending and descending order</li>
 <li>deleting all valuable items of a certain type</li>
+<li>tooltip support added</li>
 </ul>
