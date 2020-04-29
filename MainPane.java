@@ -50,7 +50,7 @@ public class MainPane extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 
-		// skapa en dummy-lista med värden för arraylist
+		// populate arraylist with some dummy-values
 		populateArray();
 
 		FlowPane topPane = new FlowPane(createTopPane());
@@ -320,33 +320,30 @@ public class MainPane extends Application {
 		private void deleteAllAppliances() {
 			int i = 0;
 			while (i < valuables.size()) {
-				if (valuables.get(i) instanceof Appliance) {
+				if (valuables.get(i) instanceof Appliance)
 					valuables.remove(i);
-				} else {
+				else
 					i++;
-				}
 			}
 		}
 
 		private void deleteAllJewellery() {
 			int i = 0;
 			while (i < valuables.size()) {
-				if (valuables.get(i) instanceof Jewellery) {
+				if (valuables.get(i) instanceof Jewellery)
 					valuables.remove(i);
-				} else {
+				else
 					i++;
-				}
 			}
 		}
 
 		private void deleteAllStock() {
 			int i = 0;
 			while (i < valuables.size()) {
-				if (valuables.get(i) instanceof Stock) {
+				if (valuables.get(i) instanceof Stock)
 					valuables.remove(i);
-				} else {
+				else
 					i++;
-				}
 			}
 		}
 	}
