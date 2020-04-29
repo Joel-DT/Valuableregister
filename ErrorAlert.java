@@ -1,16 +1,14 @@
-package eng.vers;
 /*
 * @author Joel Delgado jode9188
 * Prog2 - VT2020
 * Inlämningsuppgift 1 -  Del 2
-* @version: 1.22
+* @version: 1.30
 */
 
 import javafx.scene.control.Alert;
 
 /**
- * Shows a customized Alert-box for displaying error
- *
+ * Shows a customized Alert-box for displaying errors *
  */
 public class ErrorAlert {
 
