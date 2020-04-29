@@ -1,9 +1,8 @@
-package eng.vers;
 /*
 * @author Joel Delgado jode9188
 * Prog2 - VT2020
-* Inlämningsuppgift 1 -  Del 2
-* @version: 1.22
+* Assignment 1 -  Part 2
+* @version: 1.30
 */
 
 import java.text.DecimalFormat;
