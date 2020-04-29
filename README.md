@@ -5,11 +5,12 @@ A small Java OOP assignment using JavaFX to register different kinds of valuable
 
 Added extra functionality beyond the requirements for practice purposes:
 <ul>
+<li>tooltip support added</li>
+<li>displaying all items in a tabular fashion</li>
 <li>sorting by name in ascending and descending order</li>
 <li>sorting by value in ascending and descending order</li>
 <li>deleting all valuable items of a certain type</li>
-<li>tooltip support added</li>
 </ul>
 
 
-![Image](Valuable_Register_eng.png)
+![Image of Valuable Register](Valuable_Register_eng.png)
