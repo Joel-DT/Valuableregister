@@ -2,7 +2,7 @@
 * @author Joel Delgado jode9188
 * Prog2 - VT2020
 * Assignment 1 -  Part 2
-* @version: 1.30
+* @version: 2.0
 */
 
 import java.util.ArrayList;
@@ -95,9 +95,9 @@ public class MainPane extends Application {
 		Label lbNew = new Label("Add:");
 		lbNew.setFont(Font.font("", FontWeight.BOLD, 12));
 		MenuButton mbValuables = new MenuButton("Choose Valuable");
+		MenuItem miAppliance = new MenuItem("Appliance");
 		MenuItem miJewellry = new MenuItem("Jewellery");
-		MenuItem miStock = new MenuItem("Stocks");
-		MenuItem miAppliance = new MenuItem("Appliances");
+		MenuItem miStock = new MenuItem("Stock");
 		Button btCrash = new Button("Stock market crash");
 		mbValuables.getItems().addAll(miJewellry, miStock, miAppliance);
 		btCrash.setAlignment(Pos.CENTER_RIGHT);
