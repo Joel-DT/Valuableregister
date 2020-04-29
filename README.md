@@ -10,3 +10,5 @@ Added extra functionality beyond the requirements for practice purposes:
 <li>deleting all valuable items of a certain type</li>
 <li>tooltip support added</li>
 </ul>
+https://github.com/Joel-DT/Valuableregister/blob/master/Valuable_Register_eng.png
+![Valuable Register Image](https://github.com/Joel-DT/Valuableregister/blob/master/Valuable_Register_eng.png)
