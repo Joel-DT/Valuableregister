@@ -17,4 +17,4 @@ Added extra functionality beyond the requirements for practice purposes:
 ![Image of Valuable Register](Valuable_Register_eng.png)
 
 </br></br>
-<i>ver 1.30 - Added deletion of items of a certain type, translated to english</i>
+<i>ver 2.0 - Added deletion of items of a certain type, translated to english</i>
