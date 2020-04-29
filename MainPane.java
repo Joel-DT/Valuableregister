@@ -285,9 +285,9 @@ public class MainPane extends Application {
 			textArea.clear();
 			textArea.setStyle("-fx-text-inner-color: black; -fx-font-family: monospace");
 			if (rbNameAscend.isSelected())
-				valuables.sort(Comparator.comparing(Valuable::getName));
+				valuables.sort(Comparator.comparing(Valuable::getName, String.CASE_INSENSITIVE_ORDER));
 			else if (rbNameDescend.isSelected())
-				valuables.sort(Comparator.comparing(Valuable::getName).reversed());
+				valuables.sort(Comparator.comparing(Valuable::getName, String.CASE_INSENSITIVE_ORDER).reversed());
 			else if (rbValueAscend.isSelected())
 				valuables.sort(Comparator.comparing(Valuable::getValuePlusVAT));
 			else
