@@ -71,7 +71,7 @@ public class MainPane extends Application {
 		root.setCenter(textArea);
 		root.setBottom(bottomPane);
 
-		Scene scene = new Scene(root, 825, 420);
+		Scene scene = new Scene(root, 850, 420);
 		primaryStage.setTitle("Register of Valuables");
 		primaryStage.setScene(scene);
 		primaryStage.setResizable(false);
