@@ -1,8 +1,7 @@
-package eng.vers;
 /*
 * @author Joel Delgado jode9188
 * Prog2 - VT2020
-* Exercise 1 -  Part 2
+* Assignment 1 -  Part 2
 * @version: 1.30
 */
 
