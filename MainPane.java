@@ -2,7 +2,7 @@
 * @author Joel Delgado jode9188
 * Prog2 - VT2020
 * Assignment 1 -  Part 2
-* @version: 2.0
+* @version: 2.1
 */
 
 import java.util.ArrayList;
@@ -209,6 +209,10 @@ public class MainPane extends Application {
 						return;
 					}
 					int numbStones = dialog.getStoneField();
+					if (numbOfStones <= 0) {
+						errAlert.showIllegalValue();
+						return;
+					}
 					boolean ofGold = dialog.getCbMaterial();
 					String material = ofGold ? "Gold" : "Silver";
 					Valuable newValuable = new Jewellery(name, numbStones, material);
@@ -240,6 +244,10 @@ public class MainPane extends Application {
 					}
 					int quantity = dialog.getQuantityField();
 					double rate = dialog.getPriceField();
+					if (quantity <= 0 || rate <=0) {
+						errAlert.showIllegalValue();
+						return;
+					}
 					Valuable newValuable = new Stock(name, quantity, rate);
 					valuables.add(newValuable);
 				}
@@ -268,6 +276,10 @@ public class MainPane extends Application {
 						return;
 					}
 					double price = dialog.getPriceField();
+					if (price <= 0) {
+						errAlert.showIllegalValue();
+						return;
+					}
 					int wear = dialog.getSliderField();
 					Valuable newValuable = new Appliance(name, price, wear);
 					valuables.add(newValuable);
@@ -279,11 +291,12 @@ public class MainPane extends Application {
 	}
 
 	
-	class ShowHandler implements EventHandler<ActionEvent> {
+	private class ShowHandler implements EventHandler<ActionEvent> {
 		@Override
 		public void handle(ActionEvent event) {
 			textArea.clear();
 			textArea.setStyle("-fx-text-inner-color: black; -fx-font-family: monospace");
+			isListEmpty();
 			if (rbNameAscend.isSelected())
 				valuables.sort(Comparator.comparing(Valuable::getName, String.CASE_INSENSITIVE_ORDER));
 			else if (rbNameDescend.isSelected())
@@ -294,6 +307,13 @@ public class MainPane extends Application {
 				valuables.sort(Comparator.comparing(Valuable::getValuePlusVAT).reversed());
 			for (Valuable val : valuables)
 				textArea.appendText(val.toString() + "\n");
+		}
+
+		private void isListEmpty() {
+			if (valuables.isEmpty()) {
+				textArea.setStyle("-fx-text-inner-color: red; -fx-font-family:  monospace");
+				textArea.appendText("There are no valuables registered!");
+			}
 		}
 	}
 	
