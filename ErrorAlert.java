@@ -13,14 +13,19 @@ import javafx.scene.control.Alert;
 public class ErrorAlert {
 
 	public void showNameError() {
-		Alert alert = new Alert(Alert.AlertType.ERROR, "Error: Name cannot be empty!");
-		alert.getDialogPane().setHeaderText(null);
-		alert.getDialogPane().setStyle("-fx-background-color: ORANGE; -fx-font-size: 15");
-		alert.show();
+		alertBox("Error: Name cannot be empty!");
 	}
 	
 	public void showNumberError() {
-		Alert alert = new Alert(Alert.AlertType.ERROR, "Error: Wrong numerical value!");
+		alertBox("Error: Wrong numerical value!");
+	}
+
+	public void showIllegalValue() {
+		alertBox("Error: Value can not be 0 or negative number!");
+	}
+	
+	private void alertBox(String errorText) {
+		Alert alert = new Alert(Alert.AlertType.ERROR, errorText);
 		alert.getDialogPane().setHeaderText(null);
 		alert.getDialogPane().setStyle("-fx-background-color: ORANGE; -fx-font-size: 15");
 		alert.show();
