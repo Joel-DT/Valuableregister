@@ -17,5 +17,5 @@ Added extra functionality beyond the requirements for practice purposes:
 ![Image of Valuable Register](Valuable_Register_eng.png)
 
 </br></br>
-<i>ver 2.0 - Added deletion of items of a certain type. Translated program to english.</i>
+<i>ver 2.0 - Added deletion of items of a certain type. Translated program to english.</i></br>
 <i>ver 2.1 - Added errorhandling if number input is 0 or negative. Displays message if list of valuables is empty.</i>
