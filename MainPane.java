@@ -208,14 +208,14 @@ public class MainPane extends Application {
 						errAlert.showNameError();
 						return;
 					}
-					int numbStones = dialog.getStoneField();
+					int numbOfStones = dialog.getStoneField();
 					if (numbOfStones <= 0) {
 						errAlert.showIllegalValue();
 						return;
 					}
 					boolean ofGold = dialog.getCbMaterial();
 					String material = ofGold ? "Gold" : "Silver";
-					Valuable newValuable = new Jewellery(name, numbStones, material);
+					Valuable newValuable = new Jewellery(name, numbOfStones, material);
 					valuables.add(newValuable);
 				}
 			} catch (NumberFormatException e) {
@@ -244,7 +244,7 @@ public class MainPane extends Application {
 					}
 					int quantity = dialog.getQuantityField();
 					double rate = dialog.getPriceField();
-					if (quantity <= 0 || rate <=0) {
+					if (quantity <= 0 || rate <= 0) {
 						errAlert.showIllegalValue();
 						return;
 					}
